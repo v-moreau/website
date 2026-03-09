@@ -1,0 +1,19 @@
+[11:30 AM]name: Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy via rsync
+        uses: burnett01/rsync-deployments@7.0.1
+        with:
+          switches: -avz --delete
+          path: ./
+          remote_path: ~/vincent  # adjust to your actual path
+          remote_host: compose.ee
+          remote_user: virt146149
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
