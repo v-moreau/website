@@ -1,4 +1,4 @@
-[11:30 AM]name: Deploy
+name: Deploy
 on:
   push:
     branches: [main]
