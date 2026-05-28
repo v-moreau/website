@@ -10,11 +10,11 @@
             font-weight: normal;
         }
 
-        /* @font-face {
+        @font-face {
             font-family: 'Comic Sans MS';
             src: url('fonts/Comic Sans MS Bold.ttf') format('truetype');
             font-weight: bold;
-        } */
+        }
 
         body {
             font-family: 'Comic Sans MS', cursive;
@@ -29,66 +29,59 @@
 
         h1,
         h2 {
-            color: #c9056f;
+            color: #c9056f
         }
 
         li {
             margin-bottom: .5em;
         }
-    </style>
 
-    <STYLE TYPE="text/css">
         body {
-            /* font-family: Open Sans, Arial; */
             color: #454545;
             font-size: 16px;
             margin: 2em auto;
             max-width: 800px;
-            padding-bottom: 3em;
+            padding: 0 1em 3em;
             line-height: 1.4;
-            text-align: justify
         }
 
         a {
             color: #07a
         }
 
-        a:visited {
-            color: #941352
+        a:hover {
+            color: #c9056f
         }
 
-        div.fancyPositioning div.picture-left {
-            float: left;
-            width: 40%;
-            overflow: hidden;
-            margin-right: 1em
+        .photo-text-row {
+            display: flex;
+            gap: 1em;
+            align-items: flex-start;
         }
 
-        div.fancyPositioning div.picture-left img {
-            width: 100%
+        .photo-column {
+            flex: 0 0 40%;
         }
 
-        div.fancyPositioning div.tleft {
-            float: left;
-            width: 55%
-        }
-
-        div.fancyPositioning div.tleft p:first-child {
-            margin-top: 0
-        }
-
-        div.fancyPositioning:after {
+        .photo-column img {
+            width: 100%;
             display: block;
-            content: "";
-            clear: both
         }
 
-        /* @media screen and (max-width:500px) {
-            body {
-                text-align: left
+        .text-column {
+            flex: 1;
+        }
+
+        .text-column p:first-child {
+            margin-top: 0;
+        }
+
+        @media (max-width: 600px) {
+            .photo-text-row {
+                flex-direction: column;
             }
-        } */
-    </STYLE>
+        }
+    </style>
 
     <title>
         Vincent Moreau's website
@@ -151,13 +144,13 @@
         Research
     </h2>
 
-    <div class="fancyPositioning">
-        <div class="picture-left">
+    <div class="photo-text-row">
+        <div class="photo-column">
             <a href="photos/office.jpeg" title="Me in my office at TalTech" target="_blank">
-                <img src="photos/office-small.jpeg" alt="Me in my office at TalTech" class="center">
+                <img src="photos/office-small.jpeg" alt="Me in my office at TalTech">
             </a>
         </div>
-        <div class="tleft">
+        <div class="text-column">
             <p>
                 Here are my papers, see also my <a href="https://dblp.org/pid/48/773-1.html">DBLP page</a>:
             <ul>
