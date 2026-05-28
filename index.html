@@ -38,7 +38,6 @@
     </style>
 
     <STYLE TYPE="text/css">
-        <!--
         body {
             /* font-family: Open Sans, Arial; */
             color: #454545;
@@ -84,11 +83,11 @@
             clear: both
         }
 
-        @media screen and (max-width:500px) {
+        /* @media screen and (max-width:500px) {
             body {
                 text-align: left
             }
-        }
+        } */
     </STYLE>
 
     <title>
@@ -102,7 +101,13 @@
         Vincent's research website
     </h1>
 
-    <img src="photos/nature.jpg" title="Me during a hike in Paljassaare" class="center">
+    <!--Command to produce the low-res pictures to be loaded more quickly:
+    > magick photos/nature.jpg -filter Lanczos -resize 1600x -quality 92 -profile /System/Library/ColorSync/Profiles/sRGB\ Profile.icc -strip photos/nature-small.jpg
+    -->
+
+    <a href="photos/nature.jpg" target="_blank">
+        <img src="photos/nature-small.jpg" alt="Me during a hike in Paljassaare" class="center">
+    </a>
 
     <h2>
         About me
@@ -118,18 +123,18 @@
     <p>
         I am interested by the interface between mathematics and computer science.
         Here are a few topics I work on, and strive to connect together and understand from a categorical viewpoint:
-        <ul>
-            <li>Higher-order automata theory and model checking</li>
-            <li>The syntax and semantics of λ-calculi and type theories</li>
-            <li>Profinite spaces, Stone-type dualities and codensity monads</li>
-            <li>Implicit automata, regular functions, and transducers</li>
-            <li>Linear logic, quantitative semantics and the Taylor expansion of programs</li>
-            <li>Algebraic theories, universal algebra, and effects</li>
-            <li>Synthetic probability theory and Markov categories</li>
-            <li>Higher structures and homotopical algebra</li>
-            <li>Formal category theory and double categorical structures</li>
-            <li>Finite model theory and logical games</li>
-        </ul>
+    <ul>
+        <li>Higher-order automata theory and model checking</li>
+        <li>The syntax and semantics of λ-calculi and type theories</li>
+        <li>Profinite spaces, Stone-type dualities and codensity monads</li>
+        <li>Implicit automata, regular functions, and transducers</li>
+        <li>Linear logic, quantitative semantics and the Taylor expansion of programs</li>
+        <li>Algebraic theories, universal algebra, and effects</li>
+        <li>Synthetic probability theory and Markov categories</li>
+        <li>Higher structures and homotopical algebra</li>
+        <li>Formal category theory and double categorical structures</li>
+        <li>Finite model theory and logical games</li>
+    </ul>
     </p>
 
     <p>
@@ -142,7 +147,9 @@
 
     <div class="fancyPositioning">
         <div class="picture-left">
-            <img src="photos/tableau.jpeg" title="Me in my office at TalTech">
+            <a href="photos/office.jpeg" target="_blank">
+                <img src="photos/office-small.jpeg" alt="Me in my office at TalTech" class="center">
+            </a>
         </div>
         <div class="tleft">
             <p>
@@ -201,18 +208,19 @@
     </h2>
 
     <p>
-    I wrote reviews for the following events:
-    <a href="https://mfcs2026.irif.fr/">MFCS 2026</a>,
-    <a href="https://ul-fmf.github.io/mfps-sstt-2026/">MFPS XLII</a>,
-    <a href="https://qplconference.org/">QPL 2026</a>,
-    <a href="https://lics.siglog.org/lics26/">LiCS 2026</a>,
-    <a href="https://etaps.org/2026/conferences/fossacs/">FoSSaCS 2026</a>,
-    <a href="https://csl2026.github.io/">CSL 2026</a>,
-    <a href="https://ppdp2024.github.io/">PPDP 2024</a>.
+        I wrote reviews for the following events:
+        <a href="https://mfcs2026.irif.fr/">MFCS 2026</a>,
+        <a href="https://ul-fmf.github.io/mfps-sstt-2026/">MFPS XLII</a>,
+        <a href="https://qplconference.org/">QPL 2026</a>,
+        <a href="https://lics.siglog.org/lics26/">LiCS 2026</a>,
+        <a href="https://etaps.org/2026/conferences/fossacs/">FoSSaCS 2026</a>,
+        <a href="https://csl2026.github.io/">CSL 2026</a>,
+        <a href="https://ppdp2024.github.io/">PPDP 2024</a>.
     </p>
 
     <p>
-    I wrote grants proposals to the <a href="https://exai.ee/">Estonian Centre of Excellence in Artificial Intelligence</a> and the <a href="https://www.sciencesmaths-paris.fr/sejours-doctorants">FSMP</a>.
+        I wrote grants proposals to the <a href="https://exai.ee/">Estonian Centre of Excellence in Artificial
+            Intelligence</a> and the <a href="https://www.sciencesmaths-paris.fr/sejours-doctorants">FSMP</a>.
     </p>
 
     <p>
