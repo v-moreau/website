@@ -4,6 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
     <style>
         @font-face {
             font-family: 'Comic Sans MS';
@@ -18,8 +21,12 @@
         }
 
         body {
-            font-family: 'Comic Sans MS', 'Segoe UI', 'Noto Sans', cursive;
+            font-family: 'Comic Sans MS', 'Noto Sans', cursive;
             /* fallback fonts, for the IPA and Nguyen */
+        }
+
+        sup.ipa {
+            font-family: 'Charis SIL', 'Noto Sans', serif;
         }
 
         .center {
@@ -108,9 +115,8 @@
     </h2>
 
     <p>
-        I am Vincent Moreau&thinsp;<sup onclick="document.getElementById('name-audio').play()"
-            style="cursor: pointer">[vɛ̃sɑ̃
-            moʁo]</sup><audio id="name-audio" src="audio/vincent_moreau.m4a"></audio>,
+        I am Vincent Moreau&thinsp;<sup onclick="document.getElementById('name-audio').play()" style="cursor: pointer"
+            class="ipa">[vɛ̃sɑ̃ moʁo]</sup><audio id="name-audio" src="audio/vincent_moreau.m4a"></audio>,
         a postdoctoral researcher in computer science
         working with <a href="https://www.compose.ee/pawel/">Paweł Sobociński</a>
         in the <a href="https://compose.ee/">Compositional Systems and Methods Group</a>
